@@ -3,7 +3,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-    max-width: 100%;
+    
 }
 
 h2 {
@@ -28,4 +28,19 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+@media (max-width: 500px) {
+    nav {
+        
+        align-items: center;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    li {
+        font-size: 1rem;
+
+    }
+    
 }

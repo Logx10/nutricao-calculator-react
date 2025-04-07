@@ -1,0 +1,36 @@
+.Menu button {
+
+  max-width: 90%;
+  width: 700px;       /* largura fixa */
+  height: 60px;       /* altura fixa */
+
+  background-color: #4CAF50; /* Green */
+  color: white;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  
+
+  padding: 15px 32px;
+  margin: 10px auto;
+  font-size: 16px;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Menu button {
+    width: 350px; /* largura total em telas menores */
+    height: 50px; /* altura reduzida em telas menores */
+    font-size: 1rem; /* tamanho de fonte reduzido em telas menores */
+  }
+  
+}

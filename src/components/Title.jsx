@@ -3,7 +3,7 @@ import '../styles/Title.css';
 function Title() {
   return (
     <header>
-      <h1>Através dos cards, Aprenda, Lembre, Pratique</h1>
+      <h1>Aprender, Lembrar e Praticar</h1>
     </header>
   );
 }
