@@ -1,7 +1,8 @@
 import '../styles/Menu.css';
 import ButtonAction from './ButtonAction';
 import { useState } from 'react';
-import topics from '../data/topics';
+import topics from '../data/topics.jsx';
+import '../styles/SectionBox.css';
 
 function Menu() {
   const [openSection, setOpenSection] = useState(null);
@@ -18,11 +19,11 @@ function Menu() {
             title={section.title}
             onClick={() => toggleSection(index)}
           />
-          {openSection === index && (
-            <div className="section-box">
-              <p>{section.content}</p>
-            </div>
-          )}
+          <div
+            className={`section-box ${openSection === index ? '' : 'hidden'}`}
+          >
+            <div>{section.content}</div>
+          </div>
         </div>
       ))}
     </div>
