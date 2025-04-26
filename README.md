@@ -34,13 +34,3 @@ O projeto foi pensado tanto para praticar os conceitos de **React** como para cr
 ## 📈 Status do projeto
 
 - Em desenvolvimento 🚧
-
----
-
-Se quiser, eu também posso criar uma versão com badges, por exemplo:
-- Badge de "React Beginner"
-- Badge de "Work In Progress"
-- Badge de "First Project"
-
-Quer? 🚀✨  
-(Me fala também se quer que eu já deixe um exemplo de como colocar imagens do app ou um gif no README!)
