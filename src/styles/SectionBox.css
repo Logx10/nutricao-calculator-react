@@ -2,22 +2,225 @@
 
 .section-box {
   display: flex;
-  max-width: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
   flex-direction: column;
-  padding: 20px;
+  align-items: center; /* Alinha o conteúdo à esquerda */
+  text-align: center;     /* Alinha o texto à direita */
+  padding: 20px 40px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #555; /* cor de fundo */
-
-  opacity: 1;
-  max-height: 500px;
+  background-color: rgba(0, 128, 0, 0.2); /* verde translúcido */
+  backdrop-filter: blur(4px); /* opcional: efeito de desfoque */
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 700px; /* largura máxima */
+  width: 100%; /* largura responsiva */
   overflow: hidden;
-  transition: all 0.4s ease;
 }
+
+/* Estilo para os parágrafos */
+.section-box p {
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+}
+/*conceito basico*/
+.section-box .topic1{
+  max-width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}/*cor branca*/
+.section-box .topic2{
+  font-size: 1rem;
+  max-width: 100%;
+  background-color: #095D40;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #fff;
+
+}/*cor verde*/
+.section-box .list1{
+
+  background-color: #000;
+  width: 200px;
+  max-width: 100%;
+  min-width: none;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  align-self: center;
+}/*cor preta*/
+.section-box .listUL {
+  display: flex;
+  gap: 5px;
+}
+/*conceito basico*/
+
+/*DRI*/
+.section-box .listDRI{
+  background-color: #292929;
+  max-width: 100%;
+  min-width: none;
+  display: inline-block;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #E0E0E0;
+}
+.section-box .listDRIp{
+  background-color: #095D40;
+  max-width: 100%;
+  min-width: none;
+  display: inline-block;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #E0E0E0;
+}
+/*DRI*/
+.section-box .valorTopics {
+  text-align: center;
+}
+
+/*Necessidades Energeticas*/
+.section-box .titleNR{
+  max-width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.section-box .listNR{
+  background-color: #000;
+  width: 250px;
+  max-width: 100%;
+  min-width: none;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  align-self: center;
+}
+.section-box .title2NR{
+  max-width: 100%;
+  font-size: 1rem;
+  background-color: #095D40;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #E0E0E0;
+}
+/*Necessidades Energeticas*/
+
+/*calculando as necessidades energéticas*/
+.section-box .contentCE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-box .titleCE{
+  max-width: 100%;
+  width: 280px;
+  background-color: #fff;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.section-box .subtitleCE{
+  max-width: 100%;
+  width: 280px;
+  background-color: #095D40;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #E0E0E0;
+}
+.section-box .listCE{
+  background-color: #000;
+  width: 220px;
+  max-width: 100%;
+  min-width: none;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  align-self: center;
+}
+.calculadora-container {
+  margin-top: 20px;
+  display: grid;
+  grid-row: auto;
+  grid-template-columns: 1fr; /* duas colunas de igual largura */
+  gap: 20px; /* espaçamento entre as colunas */
+  align-items: center; /* Alinha o conteúdo à esquerda */
+  text-align: center;     /* Alinha o texto à direita */
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #000; /* verde translúcido */
+  backdrop-filter: blur(4px); /* opcional: efeito de desfoque */
+  color: #E0E0E0;
+}
+.calculadora-container p {
+  font-weight: bold;
+  font-size: 1.20rem;
+}
+
+.Menu .botaocalcular {
+  width: 200px;
+}
+
+
+/*calculadora*/
+
+/*calculadora*/
+
+/*calculando as necessidades energéticas*/
+
+/* Estilo para o título ou parágrafos destacados */
+.section-box p strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Estilo para a lista */
+.section-box ul {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  padding-left: 10px;
+  list-style: circle;
+  
+}
+
+.section-box li {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
 .section-box.hidden {
   opacity: 0;
   max-height: 0;
@@ -26,16 +229,38 @@
 }
 @media screen and (max-width: 968px) {
   .section-box {
-    width: 500px; /* largura responsiva */
+    max-width: 700px; /* largura responsiva */
+    width: 100%; /* largura responsiva */
   }
-
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 768px) {
   .section-box {
-    width: 310px; /* largura responsiva */
+    max-width: 600px; /* largura responsiva */
+    width: 100%; /* largura responsiva */
   }
-  
+  @media screen and (max-width: 685px) {
+  .section-box {
+    max-width: 500px; /* largura responsiva */
+    width: 100%; /* largura responsiva */
+    
+  }
   
 }
+@media screen and (max-width: 586px) {
+  .section-box {
+    max-width: 400px; /* largura responsiva */
+    width: 100%; /* largura responsiva */
+  }
   
+}
+@media screen and (max-width: 468px) {
+  .section-box {
+    width: 270px;
+  }
+  .section-box p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
   
+}
+}
 }
