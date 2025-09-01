@@ -4,5 +4,6 @@ import { qrcode } from 'vite-plugin-qrcode';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/nutricao-calculator-react/', // 🔹 nome exato do repositório
   plugins: [react(), qrcode()],
 });
