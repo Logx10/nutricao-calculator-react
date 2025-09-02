@@ -44,3 +44,18 @@ a {
     }
     
 }
+.menu-list-item a {
+  color: #34495e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Hover: só muda a cor do texto */
+.menu-list-item a:hover {
+  color: #1a5276;
+}
+
+/* Item ativo: só pinta o texto de verde */
+.menu-list-item a.active {
+  color: #27ae60; /* verde */
+}

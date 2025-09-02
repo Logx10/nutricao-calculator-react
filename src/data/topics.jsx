@@ -301,10 +301,6 @@ const topics = [
       </div>
     ),
   },
-  {
-    title: 'Necessidades Energéticas',
-    content: 'Revisão de conteúdos sobre energia e metabolismo.',
-  },
 ];
 
 export default topics;

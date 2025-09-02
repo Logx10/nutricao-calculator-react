@@ -1,0 +1,51 @@
+.referencias-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #27ae601a;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.referencias-container h1 {
+  color: #1a5276;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Lista responsiva com flexbox */
+.referencias-container ul {
+  display: flex;
+  flex-wrap: wrap; /* quebra os itens em várias linhas */
+  gap: 1rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.referencias-container li {
+  flex: 1 1 220px; /* cresce, encolhe e largura mínima */
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.referencias-container li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.referencias-container li a {
+  color: #1a5276;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.referencias-container p {
+  color: #34495e;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
